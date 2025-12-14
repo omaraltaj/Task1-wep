@@ -1,1 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ---------- CSS VARIABLES ---------- */
+:root {
+  --primary-blue: #089da1;
+  --text-gray: #676767;
+  --neutral-black: #000000;
+  --neutral-white: #ffffff;
+  --featured-cards-name: #a1aabd;
+
+  --icons-fs: 1.4rem;
+  --nav-fs: 1.1rem;
+  --featured-title-fs: 4rem;
+  --featured-books-card-fs: 1.2rem;
+  --john-deo-fs: 0.8rem;
+  --category-fs: 0.9rem;
+  --old-price-fs: 0.8rem;
+}
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--neutral-white);
+  color: var(--neutral-black);
+}
 

@@ -40,3 +40,72 @@ body {
   color: var(--neutral-black);
 }
 
+/* ---------- HEADER ---------- */
+.navShellAlpha {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 7%;
+  background: var(--neutral-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 7px var(--primary-blue);
+  z-index: 100;
+}
+.navLinkRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navAnchorItem {
+  position: relative;
+  font-size: var(--nav-fs);
+  color: var(--neutral-black);
+}
+
+.navAnchorItem::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-blue);
+  transition: 0.3s;
+}
+.actionCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--icons-fs);
+  color: var(--neutral-black);
+  font-weight: 900;
+}
+.searchInputField {
+  border: 1px solid var(--neutral-black);
+  border-radius: 1rem;
+  width: 15rem;
+  height: 2.4rem;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+.searchDock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandMarkSig {
+  width: 6rem;
+  cursor: default;
+}
+.navAnchorItem:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.actionCluster i:hover {
+  color: var(--primary-blue);
+}

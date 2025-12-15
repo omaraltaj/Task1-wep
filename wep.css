@@ -747,5 +747,58 @@ body {
   }
 }
 
+/* iPad Pro & similar */
+@media (max-width: 1024px) {
+  .introStage {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introCopy,
+  .introVisual {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .featureStrip {
+    flex-wrap: wrap;
+  }
+
+  .aboutCluster {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutVisual,
+  .aboutCopy {
+    width: 100%;
+  }
+
+  .feedbackRowCluster .reviewTileBox {
+    max-width: 45%;
+  }
+
+  .promoBannerStrip {
+    height: 25rem;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .promoCtaBtn {
+    margin-top: 15rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .siteFooterGrid {
+    flex-wrap: wrap;
+  }
+
+  .siteFooterCol {
+    flex: 1 1 45%;
+    min-width: 22rem;
+  }
+}
 
 

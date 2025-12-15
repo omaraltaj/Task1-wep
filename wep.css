@@ -265,3 +265,120 @@ body {
   margin-bottom: 2rem;
 }
 
+
+/* ---------- FEATURED BOOKS ---------- */
+.highlightZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.highlightTitle {
+  font-size: var(--featured-title-fs);
+  color: var(--neutral-black);
+  text-align: center;
+}
+
+.bookCarouselRow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 9%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  gap: 2.2rem;
+  padding: 0 2rem 2rem;
+  max-width: 130rem;
+}
+
+.bookCarouselRow::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 4px;
+}
+
+.bookCarouselRow::-webkit-scrollbar {
+  height: 6px;
+}
+
+.bookCarouselRow::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.bookCardShell {
+  border: 1px solid var(--text-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  background: #fff;
+}
+
+.bookCardShell:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+
+.bookCoverThumb {
+  width: 7.5rem;
+  margin: 0.6rem 2rem 0.5rem;
+}
+
+.bookTitleLabel {
+  color: var(--neutral-black);
+  font-size: var(--featured-books-card-fs);
+}
+
+.authorNameMeta {
+  color: var(--featured-cards-name);
+  font-size: var(--john-deo-fs);
+}
+
+.genreMetaLabel {
+  display: inline-block;
+  color: var(--primary-blue);
+  font-size: var(--category-fs);
+  padding: 0 2rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.priceGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.priceNow {
+  font-weight: 700;
+}
+
+.pricePrev {
+  font-size: var(--old-price-fs);
+  margin: -0.5rem 0 0.5rem 3.5rem;
+  text-decoration: line-through;
+}
+
+.ghostButtonSlim {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  padding: 0.3rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  color: var(--neutral-black);
+}
+
+.ghostButtonSlim:hover {
+  background: var(--primary-blue);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+
+.ghostButtonWide {
+  margin-top: 0.4rem;
+}

@@ -800,5 +800,91 @@ body {
     min-width: 22rem;
   }
 }
+/* iPhone XR & small phones */
+@media (max-width: 415px) {
+  :root {
+    --featured-title-fs: 2.5rem;
+  }
 
+  .blockShell {
+    min-height: 0;
+    padding: 7rem 7% 2rem;
+  }
+
+  .brandMarkSig {
+    width: 5rem;
+  }
+
+  .navLinkRow {
+    display: none;
+  }
+
+  .menuToggleHandle {
+    display: block;
+    font-size: 2.4rem;
+  }
+
+  .searchInputField {
+    width: 11rem;
+    font-size: 0.9rem;
+  }
+
+  .introCopy h1 {
+    font-size: 2.4rem;
+  }
+
+  .featureStrip {
+    flex-direction: column;
+    padding: 2rem 4%;
+  }
+
+  .bookCarouselRow {
+    max-width: 20rem;
+  }
+
+  .freshZone {
+    padding-top: 5rem;
+  }
+
+  .freshGridWrap {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .freshCardUnit {
+    padding: 0.3rem 1.5rem;
+  }
+
+  .freshCoverImg {
+    width: 10rem;
+  }
+
+  .feedbackRowCluster .reviewTileBox {
+    max-width: 100%;
+  }
+
+  .storiesGrid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.5rem;
+  }
+
+  .siteFooterGrid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promoBannerStrip {
+    height: 20rem;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .promoCtaBtn {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
 

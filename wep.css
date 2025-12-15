@@ -40,6 +40,35 @@ body {
   color: var(--neutral-black);
 }
 
+
+.blockShell {
+  min-height: 80vh;
+  padding: 10rem 7% 2rem;
+}
+
+.accentHighlight {
+  color: lightseagreen;
+}
+
+
+/* Reusable CTA button */
+.primaryCta {
+  display: inline-block;
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primaryCta:hover {
+  background-color: teal;
+}
+
+
+
 /* ---------- HEADER ---------- */
 .navShellAlpha {
   position: fixed;
@@ -109,3 +138,60 @@ body {
 .actionCluster i:hover {
   color: var(--primary-blue);
 }
+
+
+
+/* ---------- HERO SECTION ---------- */
+.introStage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("assets/image/reading.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem 7% 2rem;
+}
+
+.introStage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  opacity: 0.88;
+  z-index: 0;
+}
+
+.introCopy {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  padding: 5rem;
+}
+
+.introCopy h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.introCopy p {
+  margin: 2rem 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.introVisual {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+}
+
+.introShelfImg {
+  margin-top: -2rem;
+  width: 100%;
+  max-width: 28rem;
+}
+
+

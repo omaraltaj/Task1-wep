@@ -382,3 +382,66 @@ body {
 .ghostButtonWide {
   margin-top: 0.4rem;
 }
+
+/* ---------- NEW ARRIVALS ---------- */
+.freshZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.freshGridWrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5.5rem;
+  row-gap: 1.5rem;
+}
+
+.freshCardUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--text-gray);
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.freshCardUnit:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+
+.freshCoverImg {
+  width: 8.5rem;
+  margin-bottom: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.freshCoverImg:hover {
+  transform: scale(1.05);
+}
+
+.freshLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--neutral-black);
+}
+
+.ratingStarRow {
+  margin-bottom: 0.3rem;
+}
+
+.ratingStarRow .bxs-star,
+.ratingStarRow .bxs-star-half {
+  color: var(--primary-blue);
+}
+
+.freshCtaBtn {
+  font-size: 0.9rem;
+}
+
+

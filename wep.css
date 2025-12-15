@@ -194,4 +194,38 @@ body {
   max-width: 28rem;
 }
 
+/* ---------- PROPERTIES SECTION ---------- */
+.featureStrip {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem 7%;
+}
 
+.featureTile {
+  background: #fff;
+  border: 0.5rem solid rgba(32, 178, 170, 0.2);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.featureTile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.featureTile i {
+  font-size: 4rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.featureTile h3 {
+  margin: 1rem 0;
+}

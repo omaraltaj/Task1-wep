@@ -147,7 +147,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("assets/image/reading.png");
+  background-image: url("../image/about.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -444,4 +444,83 @@ body {
   font-size: 0.9rem;
 }
 
+
+
+/* ---------- REVIEWS ---------- */
+.feedbackZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedbackRowCluster {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+
+.reviewTileBox {
+  background: #fff;
+  border: 0.1rem solid var(--primary-blue);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  text-align: left;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.reviewTileBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.reviewTileBox img {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.reviewTileBox h3 {
+  margin: 1rem 0;
+}
+
+.reviewTileBox p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.ratingStarRow--fa {
+  margin-top: 1rem;
+  color: var(--primary-blue);
+}
+
+.ratingStarRow--fa i {
+  margin: 0 0.2rem;
+}
+
+/* ---------- DIGITAL BOOK BANNER ---------- */
+.promoBannerStrip {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  background: url("assets/image/banner.jpg") no-repeat center center / cover;
+  position: relative;
+}
+
+.promoCtaBtn {
+  margin-top: 20rem;
+  margin-left: 8rem;
+  font-size: 1.4rem;
+  padding: 1.5rem 3rem;
+}
 

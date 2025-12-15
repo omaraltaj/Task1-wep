@@ -229,3 +229,39 @@ body {
 .featureTile h3 {
   margin: 1rem 0;
 }
+
+
+/* ---------- ABOUT SECTION ---------- */
+.aboutCluster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem 5rem;
+}
+
+.aboutVisual {
+  width: 50%;
+  text-align: center;
+}
+
+.aboutVisual img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.aboutCopy {
+  width: 50%;
+  padding: 2rem;
+}
+
+.aboutCopy h2 {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutCopy p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+

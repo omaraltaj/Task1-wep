@@ -524,3 +524,72 @@ body {
   padding: 1.5rem 3rem;
 }
 
+/* ---------- BLOG SECTION ---------- */
+.storiesZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10rem;
+}
+
+.storyTile {
+  box-shadow: 1px 1px 5px var(--text-gray);
+  background: #fff;
+}
+
+.storyTile:hover {
+  background: var(--primary-blue);
+  box-shadow: 0 0 4px 1px var(--primary-blue);
+}
+
+.storyTile:hover .storyAuthor,
+.storyTile:hover .storyExcerpt,
+.storyTile:hover .storyMetaRow i {
+  color: #fff;
+}
+
+.storyThumbImg {
+  width: 27rem;
+  height: 18rem;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.storyBodyWrap {
+  padding: 0 1rem 1rem;
+}
+
+.storyAuthor {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.storyExcerpt {
+  max-width: 25rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.3;
+  color: var(--neutral-black);
+}
+
+.storyMetaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storyMetaRow i {
+  color: var(--primary-blue);
+}
+
+.heartHighlight {
+  color: var(--primary-blue);
+}
+
+

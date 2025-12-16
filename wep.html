@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- ICON LIBRARIES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="wep.css" />
+  
+</head>
+<body>
+    
+<!-- ===== FIXED HEADER ===== -->
+    <header class="navShellAlpha">
+      <img
+        class="brandMarkSig"
+        src="assets/image/logo.png"
+        alt="Book Store Logo"
+      />
+
+      
+
+      <!-- Desktop navigation -->
+      <nav class="navLinkRow">
+        <a class="navAnchorItem" href="#home">Home</a>
+        <a class="navAnchorItem" href="#about">About</a>
+        <a class="navAnchorItem" href="#featured">Featured</a>
+        <a class="navAnchorItem" href="#arrivals">Arrivals</a>
+        <a class="navAnchorItem" href="#reviews">Reviews</a>
+        <a class="navAnchorItem" href="#blog">Blog</a>
+      </nav>
+
+      <!-- Right side icons -->
+      <div class="actionCluster">
+        <div class="searchDock">
+          <input
+            type="text"
+            class="searchInputField"
+            placeholder="Search"
+          />
+          <i class="bx bx-search"></i>
+        </div>
+      </div>
+
+       <!-- Slide-in mobile side menu (CSS-only) -->
+      <div class="sideNavPanel">
+        <nav class="sideNavLinks">
+          <a class="navAnchorItem" href="#home">Home</a>
+          <a class="navAnchorItem" href="#about">About</a>
+          <a class="navAnchorItem" href="#featured">Featured</a>
+          <a class="navAnchorItem" href="#arrivals">Arrivals</a>
+          <a class="navAnchorItem" href="#reviews">Reviews</a>
+          <a class="navAnchorItem" href="#blog">Blog</a>
+        </nav>
+
+        <!-- Close button (also a label for checkbox) -->
+        <label for="navDrawerFlag" class="closeDrawerBtn">
+          <i class="bx bx-x"></i>
+        </label>
+      </div>
+    </header>
+    
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="introStage blockShell" id="home">
+      <div class="introCopy">
+        <h1>
+          WELCOME TO <br />
+          <span class="accentHighlight">BOOK STORE</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          molestias atque<br />
+          laborum non fuga ex deserunt. Exercitationem velit ducimus
+          praesentium, obcaecati hic<br />
+          voluptate id tenetur fuga illum quidem omnis? Rerum?
+        </p>
+
+        <a href="#" class="primaryCta">Learn More</a>
+      </div>
+
+      <div class="introVisual">
+        <img
+          src="assets/image/table.png"
+          alt="Shelf"
+          class="introShelfImg"
+        />
+      </div>
+    </section>
+
+    
+    <!-- ===== PROPERTIES SECTION ===== -->
+    <section class="featureStrip">
+      <div class="featureTile">
+        <i class="fa fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="featureTile">
+        <i class="fa fa-headphones"></i>
+        <h3>24 x 7 Services</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="featureTile">
+        <i class="fa fa-tag"></i>
+        <h3>Best Deal</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="featureTile">
+        <i class="fa fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </section>
+
+<!-- ===== ABOUT SECTION ===== -->
+    <section class="aboutCluster blockShell" id="about">
+      <div class="aboutVisual">
+        <img src="assets/image/about.png" alt="Reading Books" />
+      </div>
+
+      <div class="aboutCopy">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          cumque atque dolor corporis architecto. Voluptate expedita molestias
+          maxime officia natus consectetur dolor quisquam illo? Quis illum
+          nostrum perspiciatis laboriosam perferendis? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Minus ad eius saepe architecto
+          aperiam laboriosam voluptas nobis voluptates id amet eos repellat
+          corrupti harum consectetur, dolorum dolore blanditiis quam quo.
+        </p>
+        <a href="#" class="primaryCta">Learn More</a>
+      </div>
+    </section>
+    
+    <!-- ===== FEATURED BOOKS ===== -->
+    <section class="highlightZone blockShell" id="featured">
+      <h1 class="highlightTitle">Featured Books</h1>
+
+      <div class="bookCarouselRow">
+        <!-- card 1 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_1.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_2.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+        <!-- card 3 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_3.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 4 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_4.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+
+
+<!-- card 5 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_5.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 6 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_6.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        
+        <!-- card 7 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_7.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 8 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_8.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        
+        <!-- card 9 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_9.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 10 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_10.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+
+        <!-- card 11 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_11.jpg" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 12 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_12.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+        
+        <!-- card 13 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_13.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 14 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_14.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+
+        <!-- card 15 -->
+        <div class="bookCardShell">
+          <img class="bookCoverThumb" src="assets/image/book_15.png" alt="" />
+          <h3 class="bookTitleLabel">Featured Books</h3>
+          <p class="authorNameMeta">John Deo</p>
+          <p class="genreMetaLabel">Thriller, Horror, Romance</p>
+          <div class="priceGroup">
+            <span class="priceNow">$25.50</span>
+            <span class="pricePrev">$28.60</span>
+          </div>
+          <button class="ghostButtonSlim ghostButtonWide">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== NEW ARRIVALS ===== -->
+    <section class="freshZone blockShell" id="arrivals">
+      <h1 class="highlightTitle">New Arrivals</h1>
+
+      <div class="freshGridWrap">
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_1.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_2.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+
+
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_3.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_4.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_5.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_6.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+        
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_7.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_8.webp"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_9.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+
+        
+        <div class="freshCardUnit">
+          <img
+            class="freshCoverImg"
+            src="assets/image/arrival_10.jpg"
+            alt=""
+          />
+          <h3 class="freshLabel">New Arrivals</h3>
+          <div class="ratingStarRow">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <button class="ghostButtonSlim freshCtaBtn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+<!-- ===== REVIEWS ===== -->
+    <section class="feedbackZone blockShell" id="reviews">
+      <h2 class="highlightTitle">Reviews</h2>
+
+      <div class="feedbackRowCluster">
+        <div class="reviewTileBox">
+          <img src="assets/image/review_1.png" alt="John Deo" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos
+            doloribus iure distinctio! Eos dolorem quam, nisi amet saepe totam.
+          </p>
+          <div class="ratingStarRow ratingStarRow--fa">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="reviewTileBox">
+          <img src="assets/image/review_2.png" alt="John Deo" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos
+            doloribus iure distinctio! Eos dolorem quam, nisi amet saepe totam.
+          </p>
+          <div class="ratingStarRow ratingStarRow--fa">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+        </div>
+
+
+        <div class="reviewTileBox">
+          <img src="assets/image/review_3.png" alt="John Deo" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos
+            doloribus iure distinctio! Eos dolorem quam, nisi amet saepe totam.
+          </p>
+          <div class="ratingStarRow ratingStarRow--fa">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+        </div>
+
+<div class="reviewTileBox">
+          <img src="assets/image/review_4.png" alt="John Deo" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos
+            doloribus iure distinctio! Eos dolorem quam, nisi amet saepe totam.
+          </p>
+          <div class="ratingStarRow ratingStarRow--fa">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== DIGITAL BOOK BANNER ===== -->
+    <div class="promoBannerStrip">
+      <a href="#" class="primaryCta promoCtaBtn">Learn More</a>
+    </div>
+    
+
+<!-- ===== BLOG SECTION ===== -->
+    <section class="storiesZone blockShell" id="blog">
+      <h3 class="highlightTitle">Our Blog</h3>
+
+      <div class="storiesGrid">
+        <div class="storyTile">
+          <img
+            class="storyThumbImg"
+            src="assets/image/blog_1.jpg"
+            alt=""
+          />
+          <div class="storyBodyWrap">
+            <h2 class="storyAuthor">Bloger</h2>
+            <p class="storyExcerpt">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              exercitationem voluptatibus excepturi et quia voluptatem,
+              architecto culpa quae ad tenetur temporibus distinctio saepe
+              veritatis rem nulla eligendi. Eveniet, labore perspiciatis?
+            </p>
+            <div class="storyMetaRow">
+              <i class="bx bxs-calendar"></i>
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+        </div>
+
+<div class="storyTile">
+          <img
+            class="storyThumbImg"
+            src="assets/image/blog_2.jpg"
+            alt=""
+          />
+          <div class="storyBodyWrap">
+            <h2 class="storyAuthor">Bloger</h2>
+            <p class="storyExcerpt">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              exercitationem voluptatibus excepturi et quia voluptatem,
+              architecto culpa quae ad tenetur temporibus distinctio saepe
+              veritatis rem nulla eligendi. Eveniet, labore perspiciatis?
+            </p>
+            <div class="storyMetaRow">
+              <i class="bx bxs-calendar"></i>
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="storyTile">
+          <img
+            class="storyThumbImg"
+            src="assets/image/blog_3.jpg"
+            alt=""
+          />
+          <div class="storyBodyWrap">
+            <h2 class="storyAuthor">Bloger</h2>
+            <p class="storyExcerpt">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              exercitationem voluptatibus excepturi et quia voluptatem,
+              architecto culpa quae ad tenetur temporibus distinctio saepe
+              veritatis rem nulla eligendi. Eveniet, labore perspiciatis?
+            </p>
+            <div class="storyMetaRow">
+              <i class="bx bxs-calendar"></i>
+              <i class="bx bxs-heart heartHighlight"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="siteFooterWrap">
+      <div class="siteFooterGrid">
+        <div class="siteFooterCol">
+          <img
+            src="assets/image/logo.png"
+            alt="Logo"
+            class="siteFooterLogo"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat
+            ipsa aspernatur ad sequi, dolores eveniet vitae quasi.
+          </p>
+        </div>
+
+        <div class="siteFooterCol">
+          <h4>Quick Link</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#arrivals">Arrivals</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="siteFooterCol">
+          <h4>Contact Info</h4>
+          <p><i class="fa fa-phone"></i> +94 12 345 6789</p>
+          <p><i class="fa fa-phone"></i> +94 32 444 699</p>
+          <p><i class="fa fa-envelope"></i> bookstore123@gmail.com</p>
+        </div>
+
+        <div class="siteFooterCol">
+          <h4>Follow Us</h4>
+          <div class="socialLinkRow">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="siteFooterCol">
+          <h4>Newsletter</h4>
+          <form class="newsletterForm">
+            <input type="email" placeholder="Your email here" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footerBaseBar">
+        <p>
+          Design By <i class="fa fa-smile footerIconSmile"></i>
+          <span class="footerBrandSpan">WT Master Code</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+</body>
+</html>
+
+
